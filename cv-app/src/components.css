@@ -1,0 +1,9 @@
+.component{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border: solid;
+    margin: 15px;
+}
