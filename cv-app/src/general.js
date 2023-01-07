@@ -1,11 +1,17 @@
 import React from 'react'
 import './components.css'
-
+import Finished from './finished'
 export default function General(){
+
+    function exportToFinished(event){
+        event.preventDefault()
+        console.log('bruh')
+    }
 
     return (
         <div>
-           <form class='component'>
+            <form onSubmit={exportToFinished} class='component'>
+            <h3>General Details</h3>
 
             <label id='name'>Name</label>
             <input id= 'name' type='text'></input>
@@ -18,8 +24,8 @@ export default function General(){
 
             <label id='position'>Position</label>
             <input id= 'position' type='text'></input>
-            
-
+            <button type='reset'>Clear</button>
+            <button type='submit'>Submit</button>
             </form> 
         </div>
     )

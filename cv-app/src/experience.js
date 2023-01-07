@@ -4,7 +4,9 @@ export default function Experience(){
 
     return (
         <div>
-           <form class='component'>
+
+            <form class='component'>
+            <h3>Experience</h3>
 
             <label id='companyName'>Company Name</label>
             <input id= 'companyName' type='text'></input>
@@ -20,7 +22,8 @@ export default function Experience(){
 
             <label id='endDateOfWork'>End Date</label>
             <input id= 'endDateOfWork' type='date'></input>
-            
+            <button type='reset'>Clear</button>
+            <button type='submit'>Submit</button>
 
             </form> 
         </div>

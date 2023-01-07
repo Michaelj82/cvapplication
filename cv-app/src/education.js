@@ -4,7 +4,9 @@ export default function Education(){
 
     return (
         <div>
+
            <form class='component'>
+           <h3>Education</h3>
 
             <label id='schoolName'>School Name</label>
             <input id= 'schoolName' type='text'></input>
@@ -17,6 +19,9 @@ export default function Education(){
 
             <label id='endDateOfStudy'>End Date</label>
             <input id= 'endDateOfStudy' type='date'></input>
+
+            <button type='reset'>Clear</button>
+            <button type='submit'>Submit</button>
 
             </form> 
         </div>
