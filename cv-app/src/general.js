@@ -1,11 +1,25 @@
 import React from 'react'
 import './components.css'
 import Finished from './finished'
-export default function General(){
-
+export default function General(props){
+    function sendData(data){
+        props.parentCallback(data)
+    }
     function exportToFinished(event){
         event.preventDefault()
-        console.log('bruh')
+        let name = event.target[0].value
+        let email = event.target[1].value
+        let phone = event.target[2].value
+        let position = event.target[3].value
+
+        let data = ({
+            'name': name,
+            'email': email,
+            'phone': phone,
+            'position': position
+    })
+        sendData(data)
+
     }
 
     return (
