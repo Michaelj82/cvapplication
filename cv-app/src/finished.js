@@ -21,26 +21,48 @@ export default function Finished(props){
     }
 
     return(
-        <div>
+        <div id='site'>
+            <div id='forms'>
             <General parentCallback = {callbackFunction}></General>
             <Experience parentCallback = {callbackFunction}></Experience>
             <Education parentCallback={callbackFunction}></Education>
-            hi
-            <div>{generalInfo.name}</div>
-            <div>{generalInfo.email}</div>
-            <div>{generalInfo.phone}</div>
-            <div>{generalInfo.position}</div>
-            hi again
-            <div>{experienceInfo.companyName}</div>
-            <div>{experienceInfo.position}</div>
-            <div>{experienceInfo.mainTasks}</div>
-            <div>{experienceInfo.startDateOfWork}</div>
-            <div>{experienceInfo.endDateOfWork}</div>
-            last one
-            <div>{educationInfo.schoolName}</div>
-            <div>{educationInfo.fieldOfStudy}</div>
-            <div>{educationInfo.startDateOfStudy}</div>
-            <div>{educationInfo.endDateOfStudy}</div>
+            </div>
+
+            <div id='cv'>
+                <div id='cvHeader'>
+                    <h2>{generalInfo.name}</h2>
+                    <h4>{generalInfo.position}</h4>
+                    <div>{generalInfo.email}</div>
+                    <div>{generalInfo.phone}</div>
+                </div>
+
+                <div id='cvSideBar'>
+                    
+                </div>
+
+                <div id='cvEducation'>
+                    <div>{educationInfo.schoolName}</div>
+                    <div>Major: {educationInfo.fieldOfStudy}</div>
+                    <div>Timeframe Attended:</div>
+                    <div>{educationInfo.startDateOfStudy}</div>
+                    <div>{educationInfo.endDateOfStudy}</div>
+                </div>
+                
+                <div id='cvExperience'>
+                    <div>{experienceInfo.companyName}</div>
+                    <div>{experienceInfo.position}</div>
+                    <div>Tasks: {experienceInfo.mainTasks}</div>
+                    <div>Timeframe Working:</div>
+                    <div>{experienceInfo.startDateOfWork}</div>
+                    <div>{experienceInfo.endDateOfWork}</div>
+                </div>
+
+                <div id='cvFooter'>
+                    
+                </div>
+
+            </div>
+
         </div>
     )
 
