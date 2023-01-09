@@ -3,7 +3,7 @@ import './components.css'
 import Finished from './finished'
 export default function General(props){
     function sendData(data){
-        props.parentCallback(data)
+        props.parentCallback(data, 'general')
     }
     function exportToFinished(event){
         event.preventDefault()
